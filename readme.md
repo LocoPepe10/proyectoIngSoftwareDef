@@ -1,27 +1,19 @@
-# Laravel PHP Framework
+<h1> Proyecto Ingeniera de Software </h1>
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+<h2>-------------- * -------------- </h2>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+<h3> Sistema de Ventas e Inventario Web </h3>
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+<p> Sistema creado, para contabilizar y administar ventas dentro de una organizacion, y tener un comportamiento de ingresos, mas detallados. Permite tambien, tener una contabilidad en cuanto a productos, junto con diferentes detalles de cada uno como stock, proveedores, identificadores, entre otros.</p>
 
-## Official Documentation
+<p>
+  
+<p> Este proyecto esta hecho en base al Framework Laravel, utilizando ademas una base de datos relacional, administrada por dbms MYSQL </p>
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+<h4> Instrucciones de uso </h4> 
 
-## Contributing
+1 - Al estar siendo utilizado por un servidor local, es necesario instalar las herramientas necesarias que se señalan a continuacion: 
+*XAMPP.
+*LARAVEL. ( Repositorios )
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+2 - Depues de tener instalado todas las herramientas, es necesario conectarnos al proyecto a traves de el simbolo de sistema, estando dentro de la carpeta del proyecto, ejecutamos la opcion "php artisan serve", para dejar corriendo el servidor local, y asi poder probar cada elemento de la pagina respectiva.
