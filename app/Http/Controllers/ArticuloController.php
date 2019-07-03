@@ -18,6 +18,7 @@ class ArticuloController extends Controller
 {
     public function __construct()
     {
+        $this->middleware('auth'); // Para acceder solo con registro.
 
     }
     public function index(Request $request)

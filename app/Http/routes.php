@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');//Formulario de acceso al sistema.
 });
 
 //Rutas especificadas, para cada pagina o vista en especifico.
@@ -21,3 +21,11 @@ Route::resource('almacen/articulo','ArticuloController');
 Route::resource('ventas/cliente','ClienteController');
 Route::resource('compras/proveedor','ProveedorController');
 Route::resource('compras/ingreso','IngresoController');
+Route::resource('ventas/venta','VentaController');
+Route::resource('seguridad/usuario','UsuarioController');
+
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+Route::get('/{slug}', 'HomeController@index');//Redirecciona a Home.

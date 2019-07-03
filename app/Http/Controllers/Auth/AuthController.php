@@ -28,7 +28,7 @@ class AuthController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/ventas/venta'; // Primera pagina de inicio
 
     /**
      * Create a new authentication controller instance.
@@ -68,5 +68,10 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    //Redirecciona a login, si no esta registrado.
+    public function showRegistrationForm(){
+        return redirect('login');
     }
 }

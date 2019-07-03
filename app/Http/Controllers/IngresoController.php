@@ -20,7 +20,7 @@ class IngresoController extends Controller
 {
     public function __construct()
     {
-
+        $this->middleware('auth');
     }
     public function index(Request $request)
     {
@@ -86,7 +86,7 @@ class IngresoController extends Controller
                 $detalle->precio_venta = $precio_venta[$cont];
                 $detalle->save();
                 
-                $cont++;
+                $cont++; 
     		}
 
     		DB::commit();
