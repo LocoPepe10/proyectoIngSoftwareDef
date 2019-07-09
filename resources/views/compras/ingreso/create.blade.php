@@ -133,11 +133,13 @@
 @push('scripts')
 <script type="text/javascript">
   
+
     $(document).ready(function(){
        $("#bt_add").click(function(){
             agregar();
        });
     });
+
     var cont=0;
     var total=0;
     var subtotal=[];
@@ -183,6 +185,7 @@
         $("#fila"+index).remove();
         evaluar();
     }
+
 </script>
 
 @endpush

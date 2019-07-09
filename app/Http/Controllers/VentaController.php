@@ -8,9 +8,9 @@ use sisVentas\Http\Requests;
 
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
-use App\Http\Requests\VentaFormRequest;
-use App\Venta;
-use App\DetalleVenta;
+use sisVentas\Http\Requests\VentaFormRequest;
+use sisVentas\Venta;
+use sisVentas\DetalleVenta;
 use DB;
 
 use Carbon\Carbon;
@@ -69,7 +69,7 @@ class VentaController extends Controller
             $venta->num_comprobante = $request->get('num_comprobante');
             $venta->total_venta = $request->get('total_venta');
 
-            $mytime = Carbon::now('America/Lima');
+            $mytime = Carbon::now('America/Santiago');
             $venta->fecha_hora = $mytime->toDateTimeString();
             $venta->impuesto = '18';
             $venta->estado = 'A';

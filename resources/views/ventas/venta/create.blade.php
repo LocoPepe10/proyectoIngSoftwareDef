@@ -44,7 +44,7 @@
             </div>
             <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                 <div class="form-group">
-                    <label for="serie_comprobante">Serie Comprobante</label>
+                    <label for="serie_comprobante">serie Comprobante</label>
                     <input type="text" name="serie_comprobante" value="{{old('serie_comprobante')}}" class="form-control" placeholder="serie de comprobante..."/>                
                 </div>                
             </div>
@@ -154,7 +154,7 @@
     var total=0;
     var subtotal=[];
     $("#guardar").hide();
-    $("#pidarticulo").change(mostrarValores); //Al modificar se muestran los valores.
+    $("#pidarticulo").change(mostrarValores);
 
     function mostrarValores(){
         datosArticulo = document.getElementById('pidarticulo').value.split('_');
@@ -171,7 +171,7 @@
         descuento = $("#pdescuento").val();
         precio_venta = $("#pprecio_venta").val();
         stock = $("#pstock").val();
-        //Validando Stock.
+        
         if(idarticulo!="" && cantidad!="" && cantidad>0 && descuento!="" && precio_venta!=""){
             if(stock>=cantidad){
                 subtotal[cont] = (cantidad*precio_venta-descuento);
@@ -186,7 +186,7 @@
                 evaluar();
                 $('#detalles').append(fila);
             }else{
-                alert("La cantidad a vender supera el stock");
+                alert("la cantidad a vender supera el stock");
             }
 
             
